@@ -1,7 +1,8 @@
 class ArticlesController < ApplicationController
 
 def show
-  byebug
+  # byebug
+  # @article = Article.find(params[:id]) #params send id in hash format
   @article = Article.find(params[:id])
 end
 
