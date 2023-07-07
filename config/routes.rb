@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "pages#home"
   get "about", to: "pages#about"
-  resources :articles, only: [:show, :index, :new, :create] 
+  resources :articles
+  # REST - Representational state transfer - mapping HTTP Verbs (get, post, put/patch, delete) to CRUD Actions
+  # resources provides REST-ful routes to Rails resources
 
 end
